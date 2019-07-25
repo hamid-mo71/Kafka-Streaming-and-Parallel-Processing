@@ -1,0 +1,86 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>Google Maps - pygmaps </title>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&sensor=true_or_false"></script>
+<script type="text/javascript">
+	function initialize() {
+		var centerlatlng = new google.maps.LatLng(-37.452000, 148.115000);
+		var myOptions = {
+			zoom: 16,
+			center: centerlatlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+		var latlng = new google.maps.LatLng(-36.353900, 142.189400);
+		var img = new google.maps.MarkerImage('c:\\users\\hamidmo\\.virtualenvs\\fit5148-assignment-h1yunien\\lib\\site-packages\\gmplot\\markers\\6495ED.png');
+		var marker = new google.maps.Marker({
+		title: "air_temperature_celcius :22 relative_humidity :46.9 surface_temperature_celcius  :53 confidence :53",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-37.805000, 144.150000);
+		var img = new google.maps.MarkerImage('c:\\users\\hamidmo\\.virtualenvs\\fit5148-assignment-h1yunien\\lib\\site-packages\\gmplot\\markers\\6495ED.png');
+		var marker = new google.maps.Marker({
+		title: "air_temperature_celcius :18 relative_humidity :57.5 surface_temperature_celcius  :55 confidence :82",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-37.448000, 148.114000);
+		var img = new google.maps.MarkerImage('c:\\users\\hamidmo\\.virtualenvs\\fit5148-assignment-h1yunien\\lib\\site-packages\\gmplot\\markers\\6495ED.png');
+		var marker = new google.maps.Marker({
+		title: "air_temperature_celcius :11 relative_humidity :45.4 surface_temperature_celcius  :59 confidence :72",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-37.448000, 148.114000);
+		var img = new google.maps.MarkerImage('c:\\users\\hamidmo\\.virtualenvs\\fit5148-assignment-h1yunien\\lib\\site-packages\\gmplot\\markers\\6495ED.png');
+		var marker = new google.maps.Marker({
+		title: "air_temperature_celcius :10 relative_humidity :39.4 surface_temperature_celcius  :59 confidence :72",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-37.623000, 149.284000);
+		var img = new google.maps.MarkerImage('c:\\users\\hamidmo\\.virtualenvs\\fit5148-assignment-h1yunien\\lib\\site-packages\\gmplot\\markers\\6495ED.png');
+		var marker = new google.maps.Marker({
+		title: "air_temperature_celcius :23 relative_humidity :59 surface_temperature_celcius  :61 confidence :84",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-37.375000, 148.054000);
+		var img = new google.maps.MarkerImage('c:\\users\\hamidmo\\.virtualenvs\\fit5148-assignment-h1yunien\\lib\\site-packages\\gmplot\\markers\\6495ED.png');
+		var marker = new google.maps.Marker({
+		title: "air_temperature_celcius :7 relative_humidity :40.5 surface_temperature_celcius  :49 confidence :82",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-37.918400, 143.474500);
+		var img = new google.maps.MarkerImage('c:\\users\\hamidmo\\.virtualenvs\\fit5148-assignment-h1yunien\\lib\\site-packages\\gmplot\\markers\\6495ED.png');
+		var marker = new google.maps.Marker({
+		title: "air_temperature_celcius :13 relative_humidity :50.4 surface_temperature_celcius  :55 confidence :53",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+	}
+</script>
+</head>
+<body style="margin:0px; padding:0px;" onload="initialize()">
+	<div id="map_canvas" style="width: 100%; height: 100%;"></div>
+</body>
+</html>
